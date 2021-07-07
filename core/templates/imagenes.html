@@ -1,0 +1,310 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		{% load static%}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Foro Salud</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/icon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+		<script src="js/scripts.js"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+       
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+		<!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary1 mb-0">Imagenes</h2>
+				
+                <!-- Icon Divider-->
+                <div class="divider-custom1">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+		
+        </header>
+		<section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'core/img/portfolio/saludable.jpg'%}" alt="" />
+                    </div>
+                 </div>
+					<!-- Portfolio Modal 1-->
+				<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+					<div class="modal-dialog modal-xl" role="document">
+						<div class="modal-content">
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true"><i class="fas fa-times"></i></span>
+							</button>
+							<div class="modal-body text-center">
+								<div class="container">
+									<div class="row justify-content-center">
+										<div class="col-lg-8">
+											<!-- Portfolio Modal - Title-->
+											<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Estilo vida saludable</h2>
+											<!-- Icon Divider-->
+											<div class="divider-custom">
+												<div class="divider-custom-line"></div>
+												<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+												<div class="divider-custom-line"></div>
+											</div>
+											<!-- Portfolio Modal - Image-->
+											<img class="img-fluid rounded mb-5" src="{% static 'core/img/portfolio/saludable.jpg'%}" alt="" />
+											<!-- Portfolio Modal - Text-->
+											<p class="mb-5">El estilo de vida es la base de la calidad de vida, concepto que la Organización Mundial de la Salud OMS define como la percepción que un individuo tiene de su lugar en la existencia, en el contexto de la cultura y del sistema de valores en los que vive y en relación con sus objetivos, sus expectativas, sus normas, sus inquietudes.</p>
+											<button class="btn btn-primary" data-dismiss="modal">
+												<i class="fas fa-times fa-fw"></i>
+												Cerrar ventana
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'core/img/portfolio/cronicas.jpg'%}" alt="" />
+                        </div>
+                    </div>
+				<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+					<div class="modal-dialog modal-xl" role="document">
+						<div class="modal-content">
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true"><i class="fas fa-times"></i></span>
+							</button>
+							<div class="modal-body text-center">
+								<div class="container">
+									<div class="row justify-content-center">
+										<div class="col-lg-8">
+											<!-- Portfolio Modal - Title-->
+											<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Enfermedades Cronicas</h2>
+											<!-- Icon Divider-->
+											<div class="divider-custom">
+												<div class="divider-custom-line"></div>
+												<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+												<div class="divider-custom-line"></div>
+											</div>
+											<!-- Portfolio Modal - Image-->
+											<img class="img-fluid rounded mb-5" src="{% static 'core/img/portfolio/cronicas.jpg'%}" alt="" />
+											<!-- Portfolio Modal - Text-->
+											<p class="mb-5">Las enfermedades crónicas son enfermedades de larga duración y por lo general de progresión lenta. Las enfermedades cardíacas, los infartos, el cáncer, las enfermedades respiratorias y la diabetes son las principales causas de mortalidad en el mundo, siendo responsables del 63% de las muertes. En 2008, 36 millones de personas murieron de una enfermedad crónica, de las cuales la mitad era de sexo femenino y el 29% era menor de 60 años.</p>
+											<button class="btn btn-primary" data-dismiss="modal">
+												<i class="fas fa-times fa-fw"></i>
+												Cerrar ventana
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'core/img/portfolio/vacuna.jpg'%}" alt="" />
+                        </div>
+                    </div>
+				<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+					<div class="modal-dialog modal-xl" role="document">
+						<div class="modal-content">
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true"><i class="fas fa-times"></i></span>
+							</button>
+							<div class="modal-body text-center">
+								<div class="container">
+									<div class="row justify-content-center">
+										<div class="col-lg-8">
+											<!-- Portfolio Modal - Title-->
+											<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Vacuna Covid 19</h2>
+											<!-- Icon Divider-->
+											<div class="divider-custom">
+												<div class="divider-custom-line"></div>
+												<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+												<div class="divider-custom-line"></div>
+											</div>
+											<!-- Portfolio Modal - Image-->
+											<img class="img-fluid rounded mb-5" src="{% static 'core/img/portfolio/vacuna.jpg'%}" alt="" />
+											<!-- Portfolio Modal - Text-->
+											<p class="mb-5">Las vacunas contra la COVID-19 protegen contra esta enfermedad porque inducen inmunidad contra el virus SARS-Cov-2 que la causa, es decir, reducen el riesgo de que de este cause síntomas y tenga consecuencias para la salud. La inmunidad, que ayuda a las personas vacunadas a luchar contra este virus en caso de infección, reduce la probabilidad de que lo contagien a otras personas y, por tanto, también protege a estas. Este fenómeno reviste especial importancia porque permite proteger a los grupos que corren más riesgo de presentar síntomas graves de la COVID-19, como los profesionales de la salud, los ancianos y las personas que presentan determinadas enfermedades.</p>
+											<button class="btn btn-primary" data-dismiss="modal">
+												<i class="fas fa-times fa-fw"></i>
+												Cerrar ventana
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{%static 'core/img/portfolio/residencia.jpg'%}" alt="" />
+                        </div>
+                    </div>
+				<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+					<div class="modal-dialog modal-xl" role="document">
+						<div class="modal-content">
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true"><i class="fas fa-times"></i></span>
+							</button>
+							<div class="modal-body text-center">
+								<div class="container">
+									<div class="row justify-content-center">
+										<div class="col-lg-8">
+											<!-- Portfolio Modal - Title-->
+											<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Residencias sanitarias</h2>
+											<!-- Icon Divider-->
+											<div class="divider-custom">
+												<div class="divider-custom-line"></div>
+												<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+												<div class="divider-custom-line"></div>
+											</div>
+											<!-- Portfolio Modal - Image-->
+											<img class="img-fluid rounded mb-5" src="{%  static 'core/img/portfolio/residencia.jpg'%}" alt="" />
+											<!-- Portfolio Modal - Text-->
+											<p class="mb-5">La estrategia “Residencias Sanitarias” busca ofrecer, a personas que lo requieran, condiciones adecuadas para realizar cuarentenas o aislamientos, seguros y efectivos, acorde a la normativa vigente. Son establecimientos gratuitos que cumplen con las condiciones de calidad y seguridad, tanto para la persona que deba cumplir la medida de cuarentena o aislamiento, como para el personal que se encargará de su cuidado.</p>
+											<button class="btn btn-primary" data-dismiss="modal">
+												<i class="fas fa-times fa-fw"></i>
+												Cerrar ventana
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'core/img/portfolio/ansiedad.jpg' %}" alt="" />
+                        </div>
+                    </div>
+					<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+					<div class="modal-dialog modal-xl" role="document">
+						<div class="modal-content">
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true"><i class="fas fa-times"></i></span>
+							</button>
+							<div class="modal-body text-center">
+								<div class="container">
+									<div class="row justify-content-center">
+										<div class="col-lg-8">
+											<!-- Portfolio Modal - Title-->
+											<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Ansiedad</h2>
+											<!-- Icon Divider-->
+											<div class="divider-custom">
+												<div class="divider-custom-line"></div>
+												<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+												<div class="divider-custom-line"></div>
+											</div>
+											<!-- Portfolio Modal - Image-->
+											<img class="img-fluid rounded mb-5" src="{% static 'core/img/portfolio/ansiedad.jpg'%}" alt="" />
+											<!-- Portfolio Modal - Text-->
+											<p class="mb-5">Sentir ansiedad de modo ocasional es una parte normal de la vida. Sin embargo, las personas con trastornos de ansiedad con frecuencia tienen preocupaciones y miedos intensos, excesivos y persistentes sobre situaciones diarias. Con frecuencia, en los trastornos de ansiedad se dan episodios repetidos de sentimientos repentinos de ansiedad intensa y miedo o terror que alcanzan un máximo en una cuestión de minutos (ataques de pánico).</p>
+											<button class="btn btn-primary" data-dismiss="modal">
+												<i class="fas fa-times fa-fw"></i>
+												Cerrar ventana
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'core/img/portfolio/examenes.jpg'%}" alt="" />
+                        </div>
+                    </div>
+					<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+					<div class="modal-dialog modal-xl" role="document">
+						<div class="modal-content">
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true"><i class="fas fa-times"></i></span>
+							</button>
+							<div class="modal-body text-center">
+								<div class="container">
+									<div class="row justify-content-center">
+										<div class="col-lg-8">
+											<!-- Portfolio Modal - Title-->
+											<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Examenes médicos</h2>
+											<!-- Icon Divider-->
+											<div class="divider-custom">
+												<div class="divider-custom-line"></div>
+												<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+												<div class="divider-custom-line"></div>
+											</div>
+											<!-- Portfolio Modal - Image-->
+											<img class="img-fluid rounded mb-5" src="{% static 'core/img/portfolio/examenes.jpg'%}" alt="" />
+											<!-- Portfolio Modal - Text-->
+											<p class="mb-5">Durante el chequeo médico se realizan exámenes que pueden ayudar a encontrar una enfermedad antes de que comiencen los síntomas. Estas pruebas pueden ayudar a descubrir enfermedades o afecciones anticipadamente, cuando son más fáciles de tratar. Algunos exámenes se realizan en el consultorio del doctor.</p>
+											<button class="btn btn-primary" data-dismiss="modal">
+												<i class="fas fa-times fa-fw"></i>
+												Cerrar ventana
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            
+                    
+                    
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+
+    </body>
+</html>
+{% endblock %}

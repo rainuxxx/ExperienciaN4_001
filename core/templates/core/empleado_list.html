@@ -1,0 +1,31 @@
+{% extends "base_generic.html" %}
+{% block content %}
+
+<div class="container">
+    
+    <br><br><br><br>
+		<p>-----------------------------------------------------------------------------</p>
+        <table id="empleados">
+                <h3>Listado de sintomas ingresados</h3>
+                    {% for emp_num in empleado_list %}
+                    <tr>    
+                        <td>Rut del paciente : {{emp_num.rut}} 
+                        <br>Nombre del paciente : {{emp_num.nombre}} {{emp_num.apellido}}
+                        <br>Sintoma : {{emp_num.empleo}}
+                        <br>Correo Electronico : {{emp_num.correo}}
+                         
+                      
+                            <a href="{% url 'empleado_update' emp_num.pk %}" class="emButtons" style="float: right;">Modificar</a>
+                        <br>
+                        
+                            <a href="{% url 'empleado_delete' emp_num.pk %}" class="emButtons" style="float: right;">Eliminar</a>
+                       
+                        
+                        </td>  
+                    </tr>
+                   
+                    {% endfor %}
+        </table>
+		<p>-----------------------------------------------------------------------------</p>		
+</div>
+{% endblock %}

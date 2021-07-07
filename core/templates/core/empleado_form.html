@@ -1,0 +1,83 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Foro Salud</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/icon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+		<script src="js/scripts.js"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <br>
+        <br>
+        <br>
+        <div class="container d-flex align-items-center flex-column">
+
+            <br>
+            <br>
+            <br>
+            <div class="container row d-flex align-items-center flex-column"> 
+                <h1>Creando empleados</h1>
+            </div>
+
+            <div class="row">
+                <form method="POST" action="#" id="formulario">
+                    {% csrf_token%}
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2 text-center">
+                        {{empleado.rut.label}}
+                        {{empleado.rut}}
+                        
+                    </div>
+
+
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2 text-center">
+                        {{empleado.nombre.label}}
+                        {{empleado.nombre}}
+                        
+                    </div>
+
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2 text-center">
+                        {{empleado.apellido.label}}
+                        {{empleado.apellido}}
+                       
+                    </div>
+
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2 text-center">
+                        {{empleado.correo.label}}
+                        {{empleado.correo}}
+                        
+                    </div>
+
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2 text-center">
+                        {{empleado.empleo.label}}
+                        {{empleado.empleo}}
+                       
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary1 btn-xl" value="Enviar">
+                        <input type="reset" class="btn btn-primary1 btn-xl" value="limpiar">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    {% endblock %}  

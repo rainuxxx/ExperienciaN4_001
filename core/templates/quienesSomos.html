@@ -1,0 +1,100 @@
+{% extends "base_generic.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        {% load static%}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Foro Salud</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'core/img/icon.png'%}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+     
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+									<div class="container text-uppercase" style="background-color: #1fa4b6"> 
+										<h1>¿Quiénes Somos?  </h1>
+									</div>
+									
+							<!-- Icon Divider-->
+							<div class="divider-custom divider-light">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+								<div class="divider-custom-line"></div>
+							</div>
+							<div class="container"  class="container-xl">
+
+								<img src="{% static 'core/img/front/descarga.png'%}"  >
+							  <hr>
+							</div>
+                            
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <div class="jumbotron text-center">
+              <h1>Especialistas en Información</h1> 
+                            <h1>InforedSalud</h1>
+              <p> Distribuyendo información relevante a la comunidad la cual la mantendrá informada de dichos acontecimientos de salud.</p>
+              <p> En caso de dudas, consultas, aporte con información relevante. Contamos con nuestros canales de contacto.</p>
+            </div>
+			<div class="container">
+                <p>
+                    El proyecto se gestó con el propósito de construir y desarrollar un foro de excelencia, vanguardista, innovador y con calidad de servicio, entregando una atención humanizada y de primer nivel. Este foro se creó en el año 2021 ya que, por contingencia nacional y mundial, la población tiene la necesidad innata de requerir toda la información a su alcance. Nuestra misión es crear una población menos propensa a recaer en esta pandemia ya que podrá visualizar información importante acerca de cuidados, distanciamientos, residencias sanitarias, protocolos, etc. Todo acreditado y validado por Minsal y seremi de la nacionalidad chilena, contamos con un respaldo de integrantes de Salud encargados de proporcionar la información actualizada, además de profesionales de la tecnología con el cual contamos con excelente planificación y creación de esta. Dentro de la información que proporcionamos nuestros valores son los siguientes
+
+                    <ul>
+                        <li>Calidez, acercamiento, cercanía a la población chilena.</li>
+                        <li>Tradición e innovación.</li>
+                        <li>Investigación y desarrollo.</li>
+                        <li>Colaborar con la formación de profesionales de la salud de gran nivel.</li>
+                      </ul>
+                </p>
+
+
+            </div>
+			<div class="container">
+
+                <img src="{% static 'core/img/front/estadistica.png'%}" class="card-img" >
+              <hr>
+            </div>
+			<iframe style="display: block; margin: auto;" width="560" height="315" src="https://www.youtube.com/embed/qQgBqPb9Ds4" frameborder="0" allowfullscreen></iframe>
+			<div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="{% url 'index' %}">
+                        <i class="fas fa-angle-double-left"></i>
+                        Volver
+						
+                    </a>
+					
+                </div>
+				<br>
+
+      
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+
+{% endblock %}

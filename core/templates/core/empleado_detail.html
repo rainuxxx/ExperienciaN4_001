@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="container">
+<br><br><br><br><br><br><br><br>
+        <div class="container">
+            <p>Se han ingresado Correctamente sus sintomas</p>
+            <p>Informacion:</p>
+            <h4>{{empleado.rut}}</h4>
+            <h4>{{empleado.nombre}}</h4><h4>{{empleado.apellido}}</h4>
+            <h4>{{empleado.correo}}</h4>
+            <h4>{{empleado.empleo}}</h4>
+        </div>
+
+        <div class="row">
+            <a class="btn btn-primary" href="{% url 'empleados' %}">Lista empleados</a>
+        </div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{%block content%}
+
+<div class="row">
+    <div class="container" > <br><br><br><br><hr>
+        <form action="" method="POST">
+            {%csrf_token%}
+            
+            <h1> Eliminar Empleado </h1>
+            <p> ¿Estás seguro de que quieres eliminar tu usuario: {{empleado}}? </p>
+            
+            <input class="btn btn-danger" type="submit" value="Eliminar">
+        </form>
+    </div>
+</div>
+{%endblock%}
